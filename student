@@ -1,0 +1,46 @@
+name = 0
+Rollno = 0
+cls = 0 
+div = 0
+def personalinfo():
+        global name
+        global Rollno
+        global cls
+        global div
+        name = (input("Enter Your name = "))
+        Rollno = int(input("Enter Your Roll Number = "))
+        cls = input("Enter Your Class = ")
+        div = input("Enter Your Division  = ")
+def putinfo():
+        print(" Name = ",name)
+        print(" Roll num = ",Rollno)
+        print(" Class = ",cls)
+        print(" Division = ",div)
+def getmks():
+            sub1 = int(input("Enter Marks In First Subject = "))
+            sub2 = int(input("Enter Marks In Second Subject = "))
+            sub3 = int(input("Enter Marks In Third Subject = "))
+            print(" Average of marks is = ",(sub1+sub2+sub3)/3)
+
+#main
+yn=0
+while(yn != 'n'):
+    print("****************************Student Information********************************")
+    print(" \n\t 1. Enter Information \n\t 2. Print Information \n\t 3. Average of marks \n\t 4. Exit ")
+    print("\n\t")
+    ch = int(input("Enetr your Choice = "))
+    if(ch == 1):
+        personalinfo()
+    elif(ch == 2):
+        putinfo()
+    elif(ch == 3):
+        getmks()
+    else:
+        exit()
+    print("\n\t Do You Want To continue ? = ")
+    yn = input()
+
+           
+
+            
+        
